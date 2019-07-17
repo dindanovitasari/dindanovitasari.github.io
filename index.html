@@ -2,31 +2,92 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
      <title>Dinda Novitasari</title>
 
      <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Calibri, Sans-Serif; line-height: 24px; background-color: white; }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body { 
+          min-height: 100%;  
+          background: #eee;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          color: #222;
+          font-size: 14px;
+          line-height: 26px;
+          padding-bottom: 50px;
+       }
         .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #0048ba; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #0048ba; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #0048ba; text-decoration: none; border-bottom: 1px dotted #0048ba; }
-        a:hover { border-bottom-style: solid; color: #003a95; }
+        #page-wrap { 
+            max-width: 700px;   
+            background: #eee;
+            margin: 0px auto 0px; 
+            box-shadow: 1px 1px 2px #C8C8C8;
+            border-radius: 3px;  
+            padding: 40px;
+            margin-top: 50px;
+       }
+
+        h1 {
+          margin: 0 0 16px 0; 
+          padding: 0 0 16px 0; 
+          font-size: 42px; 
+          font-weight: bold; 
+          letter-spacing: -2px; 
+          border-bottom: 1px solid #C8C8C8;
+       }
+        h2 {
+          font-size: 18px;
+          margin: 0 0 5px 0;
+          position: relative;
+       }
+        h2 span {
+          position: relative;
+          bottom: 0;
+          right: 0;
+          font-style: italic;
+          font-family: 'Lato', sans-serif;
+          font-size: 14px;
+          color: #747474;
+          font-weight: normal;
+       }
+        p { margin: 0 0 12px 0; }
+        a {
+          text-decoration: none;
+          color: #0084D1;
+          font-style: bold; 
+       }
+        a:hover {
+          text-decoration: underline;
+          color: #000;
+       }
         ul { margin: 0 0 32px 17px; }
 		ol { margin: 0 0 32px 17px; }
         #objective { width: 600px; float: center; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #0048ba; }
-        dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 2px solid #0048ba;  }
-        dd { width: 600px; float: right; }
+        #objective p { font-family: 'Lato', sans-serif; color: #222; }
+        dt { 
+          font-weight: bold; 
+          font-size: 18px; 
+          text-align: right; 
+          padding: 0 5px 0 0; 
+          width: 100px; 
+          float: left; 
+          height: 50px; 
+          border-right: 2px solid #C8C8C8;
+       }
+        dd { width: 500px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
+
+        .first-name {
+          font-weight: 700;
+        }
+
+        .last-name {
+          font-weight: 300;
+        }
      </style>
 </head>
 
@@ -38,16 +99,16 @@
         
             <!-- Microformats! -->
         
-            <h1 class="fn">Dinda Novitasari</h1>
-        
-            <p>
-                Email: id[dot]dindanovitasari[at]gmail[dot]com
-            </p>
+            <h1 class="fn"><span class="first-name">Dinda</span> 
+              <span class="last-name">Novitasari</span></h1>
         </div>
                 
         <div id="objective">
-            <p style="color:black">Dinda Novitasari is machine learning engineer at A Job Thing. Currently working on recommendation system, natural language processing, and information retrieval.</br>
-			Having some research experiences in swarm intelligence, evolutionary computation, machine learning and big data analysis.</p>
+			<p>
+                Email: id[dot][firstnamelastname][at]gmail[dot]com
+            </p>		
+            <p style="color:black">I am a machine learning engineer at A Job Thing. Currently working on recommendation system, natural language processing, and user behaviour analytics.</br>
+			Having some research experiences in swarm intelligence, evolutionary computation (scheduling optimisation and recommendation system), machine learning (regression, classification, hyperparameter tuning), information retrieval (document classification), bankruptcy prediction on US company (collaborate with California State University of Fullerton).</p>
         </div>
         
         <div class="clear"></div>
@@ -57,12 +118,12 @@
             
             <dt>Education</dt>
             <dd>
-                <h2><a href="http://ub.ac.id"target="_blank">Brawijaya University</a> - Indonesia</h2>
-                <p>BS in <a href="http://tif.filkom.ub.ac.id"target="_blank">Informatics</a> (2011-2015)</p>
-				<h2><a href="http://www.ncu.edu.tw"target="_blank">National Central University</a> - Taiwan</h2>
-                <p>MS in <a href="http://en-test.csie.ncu.edu.tw"target="_blank">Computer Science and Information Engineering</a> (2016-2018) </br><span style="font-size:14px">Supervised by: <a href = "http://isslab.csie.ncu.edu.tw/en" target="_blank">Prof. Deron Liang</a>
-				</span>
+              <h2><a href="http://www.ncu.edu.tw"target="_blank">National Central University</a> - Taiwan</h2>
+              <p>MS in <a href="http://en-test.csie.ncu.edu.tw"target="_blank">Computer Science and Information Engineering</a> (2016-2018) </br>
+              <span style="font-size:14px">Supervised by: <a href = "http://isslab.csie.ncu.edu.tw/en" target="_blank">Prof. Deron Liang</a></span>
 				</p>
+      <h2><a href="http://ub.ac.id"target="_blank">Brawijaya University</a> - Indonesia</h2>
+                <p>BS in <a href="http://tif.filkom.ub.ac.id"target="_blank">Informatics</a> (2011-2015)</p>
             </dd>
             
             <dd class="clear"></dd>
@@ -89,16 +150,16 @@
             
             <dt>Experience</dt>
             <dd>
-                <h2>PT Optima Intermedia <span>Web Programmer Intern - 2014</span></h2>
-                <ul>
-                    <li>developed content management system for news portal using PHP</li>
-                </ul>
-                
                 <h2>Brawijaya University <span>Software Engineering Teaching Assistant - 2014-2015</span></h2>
                 <ul>
-                    <li>Responsible to make and deliver teaching material for lab session,
-						evaluate student performance</li>
-                </ul> 
+                    <li>Responsible to make and deliver teaching material for lab session,evaluate student performance</li>
+                </ul>              
+                <h2>PT Optima Intermedia <span>Web Programmer Intern - 2014</span></h2>
+                <ul>
+                    <li>Developed content management system for news portal using PHP</li>
+                </ul>
+                
+ 
             </dd>
             
             <dd class="clear"></dd>
@@ -107,31 +168,30 @@
             <dd>
 				<h3>Journals</h3>
 				<ol>
-					<li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Hybridizing PSO with SA for Optimizing SVR Applied to Software Effort Estimation,” TELKOMNIKA, vol. 14, no. 1, 2016.<a href="http://www.journal.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/2812/pdf_327">[link]</a></li>
-					<li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Optimizing SVR using Local Best PSO for Software Effort Estimation,” J. Inf. Technol. Comput. Sci., vol. 1, no. 1, pp. 28–37, 2016.<a href="http://jitecs.ub.ac.id/index.php/jitecs/article/download/7/3">[link]</a></li>
+					<li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Hybridizing PSO with SA for Optimizing SVR Applied to Software Effort Estimation,” TELKOMNIKA, vol. 14, no. 1, 2016.<a href="http://www.journal.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/2812/pdf_327"target="_blank">[link]</a></li>
+					<li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Optimizing SVR using Local Best PSO for Software Effort Estimation,” J. Inf. Technol. Comput. Sci., vol. 1, no. 1, pp. 28–37, 2016.<a href="http://jitecs.ub.ac.id/index.php/jitecs/article/download/7/3"target="_blank">[link]</a></li>
 				</ol>
 				<h3>Thesis</h3>
 				<ul class="list-unstyled">
 					<li><b>Bachelor Thesis</b></br>
 					Optimasi Support Vector Regression dengan Particle Swarm Optimization untuk Software Effort Estimation</li>
 					<li><b>Master Thesis</b></br>
-					綜合收益與應計項目在財務危機預測中的表現 The Role of Comprehensive Income and Accrual in Predicting Bankruptcy<a href="https://hdl.handle.net/11296/c3jw24">[link]</a></li>
+					綜合收益與應計項目在財務危機預測中的表現 The Role of Comprehensive Income and Accrual in Predicting Bankruptcy<a href="https://hdl.handle.net/11296/c3jw24"target="_blank">[link]</a></li>
 				</ul>			
 			</dd>
             
             <dd class="clear"></dd>
             
-            <dt>Miscellaneous</dt>
+            <dt>Find Me at</dt>
             <dd>
-				<h3>Social Links</h3>
 				<ul class="list-unstyled">
 					<li><a href="https://orcid.org/0000-0002-4813-7028" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-4813-7028</a></li>
 					<li>Scopus Author ID: 57189028480</li>
-					<li><a href="https://www.researchgate.net/profile/Dinda_Novitasari">ResearchGate</a></li>
-					<li><a href="http://github.com/dindanovitasari">Github</a></li>
-					<li><a href="https://scholar.google.com/citations?user=C_ob-6gAAAAJ">Google Scholar</a></li>
+					<li><a href="https://www.researchgate.net/profile/Dinda_Novitasari"target="_blank">ResearchGate</a></li>
+					<li><a href="http://github.com/dindanovitasari"target="_blank">Github</a></li>
+					<li><a href="https://scholar.google.com/citations?user=C_ob-6gAAAAJ"target="_blank">Google Scholar</a></li>
+					<li><a href="https://id.linkedin.com/in/dindanovitasari"target="_blank">LinkedIn</a></li>
 				</ul>
-					<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="dindanovitasari"><a class="LI-simple-link" href='https://id.linkedin.com/in/dindanovitasari?trk=profile-badge'>Dinda Novitasari</a></div>
 				
 			</dd>
             
@@ -143,5 +203,5 @@
     </div>
 
 </body>
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
 </html>
