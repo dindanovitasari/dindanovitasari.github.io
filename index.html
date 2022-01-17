@@ -1,354 +1,414 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Dinda Novitasari</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Dinda Novitasari</title>
 
-    <style>
-* { margin: 0; padding: 0; box-sizing: border-box;}
-body {
-  min-height: 100%;
-  background: #eee;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #222;
-  font-size: 14px;
-  line-height: 26px;
-  padding-bottom: 50px;
-}
-.clear { clear: both; }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100%;
+      background: #eee;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      color: #222;
+      font-size: 14px;
+      line-height: 26px;
+      padding-bottom: 50px;
+    }
+
+    .clear {
+      clear: both;
+    }
 
 
-#page-wrap {
-    max-width: 725px;
-    height: auto;
-    background: #eee;
-    margin: 0px auto 0px;
+    #page-wrap {
+      max-width: 725px;
+      height: auto;
+      background: #eee;
+      margin: 0px auto 0px;
 
-    /*border-radius: 3px;
+      /*border-radius: 3px;
     box-shadow: 1px 1px 2px #C8C8C8;*/
-    padding: 40px;
-    margin-top: 50px;
-}
-#pic {
-  float: right; margin: -30px 0 0 0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-h1 {
-  margin: 0 0 16px 0;
-  padding: 0 0 16px 0;
-  font-size: 42px;
-  font-weight: bold;
-  letter-spacing: -2px;
-  border-bottom: 1px solid #C8C8C8;
-}
-h3 {
-  font-size: 16px;
-  margin: 0 0 5px 0;
-  position: relative;
-}
-h3 span {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  font-style: italic;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  color: #747474;
-  font-weight: normal;
-}
-p { margin: 0 0 12px 0; }
-a {
-  text-decoration: none;
-  color: #0084D1;
-  font-style: bold;
-}
-a:hover {
-  text-decoration: underline;
-  color: #000;
-}
-ul { margin: 0 0 32px 17px; }
-ol { margin: 0 0 32px 17px; }
-#objective { width: 600px; float: center; }
-#objective p { font-family: 'Lato', sans-serif; color: #222; }
-dt {
-  font-weight: bold;
-  font-size: 18px;
-  text-align: right;
-  padding: 0 5px 0 0;
-  width: 125px;
-  float: left;
-  height: 50px;
-  border-right: 2px solid #C8C8C8;
-}
-dd { width: 500px; float: right; }
-dd.clear { float: none; margin: 0; height: 15px; }
+      padding: 40px;
+      margin-top: 50px;
+    }
 
-.first-name {
-  font-weight: 700;
-}
+    #pic {
+      float: right;
+      margin: -30px 0 0 0;
+      width: 140px;
+      height: 150px;
+      border-radius: 50%;
+    }
 
-.last-name {
-  font-weight: 300;
-}
+    h1 {
+      margin: 0 0 16px 0;
+      padding: 0 0 16px 0;
+      font-size: 42px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      border-bottom: 1px solid #C8C8C8;
+    }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
+    h3 {
+      font-size: 16px;
+      margin: 0 0 5px 0;
+      position: relative;
+    }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
+    h3 span {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      font-style: italic;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #747474;
+      font-weight: normal;
+    }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
+    p {
+      margin: 0 0 12px 0;
+    }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
+    a {
+      text-decoration: none;
+      color: #0084D1;
+      font-style: bold;
+    }
 
-/* Style the tab content
+    a:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+
+    ul {
+      margin: 0 0 32px 17px;
+    }
+
+    ol {
+      margin: 0 0 32px 17px;
+    }
+
+    #objective {
+      width: 600px;
+      float: center;
+    }
+
+    #objective p {
+      font-family: 'Lato', sans-serif;
+      color: #222;
+    }
+
+    dt {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: right;
+      padding: 0 5px 0 0;
+      width: 125px;
+      float: left;
+      height: 50px;
+      border-right: 2px solid #C8C8C8;
+    }
+
+    dd {
+      width: 500px;
+      float: right;
+    }
+
+    dd.clear {
+      float: none;
+      margin: 0;
+      height: 15px;
+    }
+
+    .first-name {
+      font-weight: 700;
+    }
+
+    .last-name {
+      font-weight: 300;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content
 .tabcontent {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 } */
-
-
-    </style>
+  </style>
 </head>
+
 <body>
-<div id="page-wrap">
+  <div id="page-wrap">
     <img src="images/profile_pic_dinda.jpg" alt="Photo of Dinda" id="pic">
 
     <div id="contact-info" class="vcard">
 
-        <h1 class="fn"><span class="first-name">Dinda</span>
-            <span class="last-name">Novitasari</span></h1>
+      <h1 class="fn"><span class="first-name">Dinda</span>
+        <span class="last-name">Novitasari</span>
+      </h1>
     </div>
     <p>Email: id[dot][<b>firstname</b>lastname][at]gmail[dot]com | East Java, Indonesia</p>
-    <p><a href="https://github.com/dindanovitasari"target="_blank">GitHub</a> |
-       <a href="https://www.datacamp.com/profile/dindanovitasari"target="_blank">Data Camp</a> |
-       <a href="https://leetcode.com/dindanovitasari/"target="_blank">Leetcode</a> |
-       <a href="https://www.hackerrank.com/dindanovitasari"target="_blank">Hackerrank</a> |
-       <a href="https://id.linkedin.com/in/dindanovitasari"target="_blank">LinkedIn</a> |
-       <a href="https://medium.com/@dindanovitasari"target="_blank">Medium</a> |
-       <a href="https://orcid.org/0000-0002-4813-7028" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">ORCID</a> |
-        <a href="https://www.researchgate.net/profile/Dinda_Novitasari"target="_blank">ResearchGate</a> |
-       <a href="https://scholar.google.com/citations?user=C_ob-6gAAAAJ"target="_blank">Google Scholar</a>
+    <p>
+      <a href="https://www.datacamp.com/profile/dindanovitasari" target="_blank">Data Camp</a> |
+      <a href="https://github.com/dindanovitasari" target="_blank">GitHub</a> |
+      <a href="https://scholar.google.com/citations?user=C_ob-6gAAAAJ" target="_blank">Google Scholar</a> |
+      <a href="https://www.hackerrank.com/dindanovitasari" target="_blank">Hackerrank</a> |
+      <a href="https://leetcode.com/dindanovitasari/" target="_blank">Leetcode</a> |
+      <a href="https://id.linkedin.com/in/dindanovitasari" target="_blank">LinkedIn</a> |
+      <a href="https://medium.com/@dindanovitasari" target="_blank">Medium</a> |
+      <a href="https://orcid.org/0000-0002-4813-7028" target="orcid.widget" rel="noopener noreferrer"
+        style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+          style="width:1em;margin-right:.5em;" alt="ORCID iD icon">ORCID</a> |
+      <a href="https://www.researchgate.net/profile/Dinda_Novitasari" target="_blank">ResearchGate</a> |
+
     </p>
 
     <div class="tab">
-        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'professional')">Professional Summary
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'scientific')">Scientific Bio</button>
-        <button class="tablinks" onclick="openCity(event, 'longbio')">Long CV</button>
+      <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'professional')">Professional Summary
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'scientific')">Scientific Bio</button>
+      <button class="tablinks" onclick="openCity(event, 'longbio')">Long CV</button>
     </div>
 
     <div class="tabcontent" id="professional">
-        <div id="objective">
-            <p>A machine learning engineer who provides the solution for industry problems by leveraging machine
-                learning
-                (natural language processing, information retrieval, and recommendation systems) and assists the company
-                to
-                answer "after building machine learning model, then what's next?".
-                Earned a master degree from Department of Computer Science and Information Engineering, National Central
-                University.</p>
-        </div>
+      <div id="objective">
+        <p>A machine learning engineer who provides the solution for industry problems by leveraging machine
+          learning
+          (natural language processing, information retrieval, and recommendation systems) and assists the company
+          to
+          answer "after building machine learning model, then what's next?".
+          Earned a master degree from Department of Computer Science and Information Engineering, National Central
+          University.</p>
+      </div>
     </div>
 
     <div class="tabcontent" id="scientific">
-        <div id="objective">
-            <p><b>Dinda Novitasari</b> earned a Master degree from Department of Computer Science and Information
-                Engineering, National Central University. At present, she is a machine learning engineer in the
-                telecommunication industry. Her research interests include machine learning and data mining
-                applications.
-            </p>
-        </div>
+      <div id="objective">
+        <p><b>Dinda Novitasari</b> earned a Master degree from Department of Computer Science and Information
+          Engineering, National Central University. At present, she is a machine learning engineer in the
+          telecommunication industry. Her research interests include machine learning and data mining
+          applications.
+        </p>
+      </div>
     </div>
 
     <div class="tabcontent" id="longbio">
-        <div id="objective">
-            <p style="color:black">A machine learning engineer who provides the solution for industry problems by
-                leveraging
-                machine learning (natural language processing, information retrieval, and recommendation systems)
-                and assists the company to answer "after building machine learning model, then what's next?".</br>
-                Before starting my career as a machine learning engineer, I spent most of my time as a research student.
-                I researched swarm intelligence, evolutionary computation (scheduling optimisation and recommendation
-                system),
-                machine learning (regression, classification, hyperparameter tuning), information retrieval (document
-                classification),
-                bankruptcy prediction on US company (collaborate with California State University of Fullerton) during
-                my
-                bachelor and master degree.</p>
-        </div>
+      <div id="objective">
+        <p style="color:black">A machine learning engineer who provides the solution for industry problems by
+          leveraging
+          machine learning (natural language processing, information retrieval, and recommendation systems)
+          and assists the company to answer "after building machine learning model, then what's next?".</br>
+          Before starting my career as a machine learning engineer, I spent most of my time as a research student.
+          I researched swarm intelligence, evolutionary computation (scheduling optimisation and recommendation
+          system),
+          machine learning (regression, classification, hyperparameter tuning), information retrieval (document
+          classification),
+          bankruptcy prediction on US company (collaborate with <a href="http://www.fullerton.edu/"
+            target="_blank">California State University of
+            Fullerton </a>) during my bachelor and master degree.</p>
+      </div>
 
-        <div class="clear"></div>
-        <dl>
-            <dd class="clear"></dd>
-            <dt>Experiences</dt>
-            <dd>
-                <h3><a href="http://telkomsel.com" target="_blank">Telkomsel</a><span> Machine Learning Engineer | 2020-Present</span>
-                </h3>
-                <ul>
-                    <p>part of Digital Prodigy Team</p>
-                </ul>
-                <h3><a href="http://ajobthing.com" target="_blank">A Job Thing</a><span> Machine Learning Engineer | 2018-2020</span>
-                </h3>
+      <div class="clear"></div>
+      <dl>
+        <dd class="clear"></dd>
+        <dt>Experiences</dt>
+        <dd>
+          <h3><a href="http://telkomsel.com" target="_blank">Telkomsel</a><span> Machine Learning Engineer |
+              2020-Present</span>
+          </h3>
+          <ul>
+            <p>part of Digital Prodigy Team</p>
+            <li>Assisted team to productionize XX+ models from XX use case which uplifted revenue by IDR XX Bn</li>
+            <li>Improved existing machine learning pipeline which reduced processing time from XX days into XX hours
+            </li>
+            <li>Assisted team to automate dashboard</li>
+            <li>Built propensity model with AUC XX which uplifted revenue IDR by XX Bn</li>
 
-                <ul>
-                    <!--p>Working under its Indonesia office: PT Mau Kerja Indonesia</p-->
-                    <li>Build content-based recommender system using Doc2Vec and TF-IDF</li>
-                    <li>Build data pipeline and warehouse for content and user data using Elasticsearch </li>
-                    <li> Develop personalised recommendation engines using hybrid algorithms</li>
-                    <li>Optimise speed and relevancy search engine using Elasticsearch</li>
-                    <li>Build data pipeline to load data from MySQL to Elasticsearch using Logstash</li>
-                    <li>Build analytics dashboard using Dash</li>
-                    <li>Develop multi-language tag recommender using POS-Tag concept</li>
-                    <li>Develop a classification engine which helps the marketing team reaching out to new customers</li>
-                    <li>Develop a diagnostic system which helps the product team maintain the job post and product review
-                        quality using word embedding, hierarchical clustering</li>
-                    <li>Develop cross platform job ads push notification system to enhance job application rate</li>
-                </ul>
+          </ul>
+          <h3><a href="http://ajobthing.com" target="_blank">A Job Thing</a><span> Machine Learning Engineer |
+              2018-2020</span>
+          </h3>
+
+          <ul>
+            <!--p>Working under its Indonesia office: PT Mau Kerja Indonesia</p-->
+            <li>Built content-based recommender system using Doc2Vec and TF-IDF</li>
+            <li>Built data pipeline and warehouse for content and user data using Elasticsearch</li>
+            <li>Developed personalised recommendation engines using hybrid algorithms</li>
+            <li>Optimised speed and relevancy search engine using Elasticsearch</li>
+            <li>Built data pipeline to load data from MySQL to Elasticsearch using Logstash</li>
+            <li>Built analytics dashboard using Dash</li>
+            <li>Developed multi-language tag recommender using POS-Tag concept</li>
+            <li>Developed a classification engine which helps the marketing team reaching out to new customers
+            </li>
+            <li>Developed a diagnostic system which helps the product team maintain the job post and product
+              review
+              quality using word embedding, hierarchical clustering
+            </li>
+            <li>Developed cross platform job ads push notification system to enhance job application rate</li>
+          </ul>
 
 
-            </dd>
+        </dd>
 
-            <dd class="clear"></dd>
-            <dt>Skills</dt>
-            <dd>
-                <h3>Data Science Skills</h3>
-                <p>Machine Learning, Statistical Analysis, Data Mining, Classification, Clustering</p>
-                <h3>Programming Skills</h3>
-                <p>Matlab, Python</p>
-                <h3>Data Engineering Skills</h3>
-                <p>Web scraping, SQL, NoSQL, Data extraction and transformation</p>
-                <h3>Soft Skills</h3>
-                <p>Project Management</p>
-            </dd>
+        <dd class="clear"></dd>
+        <dt>Skills</dt>
+        <dd>
+          <h3>Data Science Skills</h3>
+          <p>Machine Learning, Statistical Analysis, Data Mining, Classification, Clustering</p>
+          <h3>Programming Skills</h3>
+          <p>Matlab, Python</p>
+          <h3>Data Engineering Skills</h3>
+          <p>Web scraping, SQL, NoSQL, Data extraction and transformation</p>
+          <h3>Soft Skills</h3>
+          <p>Project Management</p>
+        </dd>
 
-            <dd class="clear"></dd>
-            <dt>Tools</dt>
-            <dd>
-                <h3>Cloud</h3>
-                <p>AWS EC2</p>
-                <h3>Database</h3>
-                <p>MySQL, Google Firebase, Hive</p>
-                <h3>Framework/ Library</h3>
-                <p>Hadoop, Spark, Kedro, MLFlow, Pandas, Scikit-Learn, NLTK, Spacy, Gensim, Elasticsearch, Logstash, Flask,
-                    Redis, Celery, xgboost, SQLAlchemy, Dash</p>
-            </dd>
+        <dd class="clear"></dd>
+        <dt>Tools</dt>
+        <dd>
+          <h3>Cloud</h3>
+          <p>AWS EC2</p>
+          <h3>Database</h3>
+          <p>MySQL, Google Firebase, Hive</p>
+          <h3>Framework/ Library</h3>
+          <p>Hadoop, Spark, Kedro, MLFlow, Pandas, Scikit-Learn, NLTK, Spacy, Gensim, Elasticsearch, Logstash,
+            Flask,
+            Redis, Celery, xgboost, SQLAlchemy, Dash</p>
+        </dd>
 
-            <dd class="clear"></dd>
-            <dt>Certifications</dt>
-            <dd>
-                <ul>
-                    <li>IBM Certified Database Associate DB2 9 Fundamentals</li>
-                    <li>IBM Certified Solution Designer – Object Oriented Analysis and Design, vUML 2</li>
-                    <li>IC3 Digital Literacy Certification</li>
-                </ul>
-            </dd>
+        <dd class="clear"></dd>
+        <dt>Certifications</dt>
+        <dd>
+          <ul>
+            <li>IBM Certified Database Associate DB2 9 Fundamentals</li>
+            <li>IBM Certified Solution Designer – Object Oriented Analysis and Design, vUML 2</li>
+            <li>IC3 Digital Literacy Certification</li>
+          </ul>
+        </dd>
 
-            <dd class="clear"></dd>
-            <dt>Education</dt>
-            <dd>
-                <h3><a href="http://www.ncu.edu.tw" target="_blank">National Central University</a> - Taiwan</h3>
-                <p>MS in <a href="http://en-test.csie.ncu.edu.tw" target="_blank">Computer Science and Information
-                    Engineering</a> (2016-2018) - 3.88 of 4.00 </br>
-                    <span style="font-size:14px">Supervised by: <a href="http://isslab.csie.ncu.edu.tw/en"
-                                                                   target="_blank">Prof. Deron Liang</a></span><br>
-                    Related courses: <a
-                            href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52037&outline=52037&semester=1041"
-                            target="_blank">Machine Learning</a> (96/100),
-                    <a href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52046&outline=52046&semester=1052"
-                       target="_blank">Introduction to Data Science</a> (90/100),
-                    <a href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52030&outline=52030&semester=1062"
-                       target="_blank">Data Mining on Biological Data</a> (91/100),
-                    <a href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52026&outline=52026&semester=1041"
-                       target="_blank">Intelligent Surveillance</a> (84/100)
-                </p>
-                <h3><a href="http://ub.ac.id" target="_blank">Brawijaya University</a> - Indonesia</h3>
-                <p>BS in <a href="http://tif.filkom.ub.ac.id" target="_blank">Informatics</a> (2011-2015) - 3.56 of 4.00<br>
-                    Related courses: Calculus (3.5/4.0), Probabilistic and Statistics (4.0/4.0), Discrete Mathematics
-                    (4.0/4.0),
-                    Advanced Computational Mathematics (3.5/4.0), Pattern Recognition (4.0/4.0),
-                    Artificial Intelligence (3.0/4.0), Information Retrieval Systems (4.0/4.0), Data Mining (3.0/4.0),
-                    Evolutionary Algorithms (4.0/4.0)
-                </p>
-            </dd>
+        <dd class="clear"></dd>
+        <dt>Education</dt>
+        <dd>
+          <h3><a href="http://www.ncu.edu.tw" target="_blank">National Central University</a> - Taiwan</h3>
+          <p>MS in <a href="http://en-test.csie.ncu.edu.tw" target="_blank">Computer Science and Information
+              Engineering</a> (2016-2018) - 3.88 of 4.00 </br>
+            <span style="font-size:14px">Supervised by: <a href="http://isslab.csie.ncu.edu.tw/en" target="_blank">Prof.
+                Deron Liang</a></span><br>
+            Related courses: <a
+              href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52037&outline=52037&semester=1041"
+              target="_blank">Machine Learning</a> (96/100),
+            <a href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52046&outline=52046&semester=1052"
+              target="_blank">Introduction to Data Science</a> (90/100),
+            <a href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52030&outline=52030&semester=1062"
+              target="_blank">Data Mining on Biological Data</a> (91/100),
+            <a href="https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=52026&outline=52026&semester=1041"
+              target="_blank">Intelligent Surveillance</a> (84/100)
+          </p>
+          <h3><a href="http://ub.ac.id" target="_blank">Brawijaya University</a> - Indonesia</h3>
+          <p>BS in <a href="http://tif.filkom.ub.ac.id" target="_blank">Informatics</a> (2011-2015) - 3.56 of 4.00<br>
+            Related courses: Calculus (3.5/4.0), Probabilistic and Statistics (4.0/4.0), Discrete Mathematics
+            (4.0/4.0),
+            Advanced Computational Mathematics (3.5/4.0), Pattern Recognition (4.0/4.0),
+            Artificial Intelligence (3.0/4.0), Information Retrieval Systems (4.0/4.0), Data Mining (3.0/4.0),
+            Evolutionary Algorithms (4.0/4.0)
+          </p>
+        </dd>
 
-            <dd class="clear"></dd>
-            <dt>Published Works</dt>
-            <dd>
-                <h3>Journals</h3>
-                <ol>
-                    <li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Hybridizing PSO with SA for
-                        Optimizing SVR Applied to Software Effort Estimation,” TELKOMNIKA, vol. 14, no. 1, 2016.<a
-                                href="http://www.journal.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/2812/pdf_327"
-                                target="_blank">[link]</a></li>
-                    <li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Optimizing SVR using Local Best
-                        PSO
-                        for Software Effort Estimation,” J. Inf. Technol. Comput. Sci., vol. 1, no. 1, pp. 28–37,
-                        2016.<a
-                                href="http://jitecs.ub.ac.id/index.php/jitecs/article/download/7/3"
-                                target="_blank">[link]</a></li>
-                </ol>
-                <h3>Thesis</h3>
-                <ul class="list-unstyled">
-                    <li><b>Bachelor Thesis</b></br>
-                        Optimasi Support Vector Regression dengan Particle Swarm Optimization untuk Software Effort
-                        Estimation<a href="http://filkom.ub.ac.id/doro/archives/detail/DR00065201512"
-                                     target="_blank">[link]</a></li>
-                    <li><b>Master Thesis</b></br>
-                        綜合收益與應計項目在財務危機預測中的表現 The Role of Comprehensive Income and Accrual in Predicting Bankruptcy<a
-                                href="https://hdl.handle.net/11296/c3jw24" target="_blank">[link]</a></li>
-                </ul>
-            </dd>
-        </dl>
+        <dd class="clear"></dd>
+        <dt>Published Works</dt>
+        <dd>
+          <h3>Journals</h3>
+          <ol>
+            <li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Hybridizing PSO with SA for
+              Optimizing SVR Applied to Software Effort Estimation,” TELKOMNIKA, vol. 14, no. 1, 2016.<a
+                href="http://www.journal.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/2812/pdf_327"
+                target="_blank">[link]</a></li>
+            <li><u><b>D. Novitasari</b></u>, I. Cholissodin, and W. F. Mahmudy, “Optimizing SVR using Local Best
+              PSO
+              for Software Effort Estimation,” J. Inf. Technol. Comput. Sci., vol. 1, no. 1, pp. 28–37,
+              2016.<a href="http://jitecs.ub.ac.id/index.php/jitecs/article/download/7/3" target="_blank">[link]</a>
+            </li>
+          </ol>
+          <h3>Thesis</h3>
+          <ul class="list-unstyled">
+            <li><b>Bachelor Thesis</b></br>
+              Optimasi Support Vector Regression dengan Particle Swarm Optimization untuk Software Effort
+              Estimation<a href="http://filkom.ub.ac.id/doro/archives/detail/DR00065201512" target="_blank">[link]</a>
+            </li>
+            <li><b>Master Thesis</b></br>
+              綜合收益與應計項目在財務危機預測中的表現 The Role of Comprehensive Income and Accrual in Predicting Bankruptcy<a
+                href="https://hdl.handle.net/11296/c3jw24" target="_blank">[link]</a></li>
+          </ul>
+        </dd>
+      </dl>
     </div>
 
 
-</div>
+  </div>
 
 
 </body>
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+
 
 
 </script>
+
 </html>
