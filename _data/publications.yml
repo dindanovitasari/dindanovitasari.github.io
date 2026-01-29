@@ -1,0 +1,19 @@
+journals:
+  - title: "Hybridizing PSO with SA for Optimizing SVR Applied to Software Effort Estimation"
+    authors: "D. Novitasari, I. Cholissodin, W. F. Mahmudy"
+    journal: "TELKOMNIKA"
+    year: 2016
+    link: "http://www.journal.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/2812/pdf_327"
+  - title: "Optimizing SVR using Local Best PSO for Software Effort Estimation"
+    authors: "D. Novitasari, I. Cholissodin, W. F. Mahmudy"
+    journal: "J. Inf. Technol. Comput. Sci."
+    year: 2016
+    link: "http://jitecs.ub.ac.id/index.php/jitecs/article/download/7/3"
+
+theses:
+  - title: "Optimasi Support Vector Regression dengan Particle Swarm Optimization untuk Software Effort Estimation"
+    type: "Bachelor Thesis"
+    link: "http://filkom.ub.ac.id/doro/archives/detail/DR00065201512"
+  - title: "The Role of Comprehensive Income and Accrual in Predicting Bankruptcy"
+    type: "Master Thesis"
+    link: "https://hdl.handle.net/11296/c3jw24"

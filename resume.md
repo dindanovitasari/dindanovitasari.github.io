@@ -27,7 +27,7 @@ permalink: /resume/
 
 ## Professional Summary
 
-An IT professional who provides solutions for industry problems by leveraging machine learning (NLP, information retrieval, and recommendation systems) and assists teams with productionizing and operationalizing models.
+An applied machine learning practitioner with experience building and deploying models in industry. Research interests include natural language processing, information retrieval, and recommender systems. Skilled in model productionization, data pipelines, and evaluation.
 
 ## Experiences
 
@@ -77,14 +77,20 @@ GPA: 3.56/4.00
 
 ## Published Works
 
-### Journals
+## Research
 
-- D. Novitasari, I. Cholissodin, and W. F. Mahmudy, “Hybridizing PSO with SA for Optimizing SVR Applied to Software Effort Estimation,” TELKOMNIKA, vol. 14, no. 1, 2016. [link](http://www.journal.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/2812/pdf_327)
-- D. Novitasari, I. Cholissodin, and W. F. Mahmudy, “Optimizing SVR using Local Best PSO for Software Effort Estimation,” J. Inf. Technol. Comput. Sci., 2016. [link](http://jitecs.ub.ac.id/index.php/jitecs/article/download/7/3)
+My work spans both applied industry projects and academic research. I focus on building robust, scalable ML systems and improving retrieval and recommendation quality using hybrid approaches.
 
-### Thesis
+## Selected publications
 
-- Bachelor Thesis: *Optimasi Support Vector Regression dengan Particle Swarm Optimization untuk Software Effort Estimation* [link](http://filkom.ub.ac.id/doro/archives/detail/DR00065201512)
-- Master Thesis: *The Role of Comprehensive Income and Accrual in Predicting Bankruptcy* [link](https://hdl.handle.net/11296/c3jw24)
+{% for p in site.data.publications.journals %}
+- **{{ p.authors }}**. "{{ p.title }}" — _{{ p.journal }}_, {{ p.year }}. {% if p.link %}[pdf]({{ p.link }}){% endif %}
+{% endfor %}
+
+## Theses
+
+{% for t in site.data.publications.theses %}
+- **{{ t.type }}:** {{ t.title }} {% if t.link %}[link]({{ t.link }}){% endif %}
+{% endfor %}
 
 </div>

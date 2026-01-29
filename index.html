@@ -3,313 +3,39 @@ layout: default
 title: Home
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<header class="profile">
+  <img src="/images/profile.png" alt="Dinda Novitasari" class="avatar">
+  <h1>Dinda Novitasari</h1>
+  <p class="subtitle">Machine Learning Engineer — Researcher in applied ML, information retrieval, and recommender systems</p>
+  <p class="contact">Email: id[dot][firstname lastname][at]gmail[dot]com · East Java, Indonesia</p>
+  <p>
+    <a class="button" href="{{ '/resume/' | relative_url }}">Full CV / Resume</a>
+    <a class="button" href="{{ '/blog/' | relative_url }}">Blog</a>
+  </p>
+</header>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dinda Novitasari</title>
+<section class="research">
+  <h2>Research interests</h2>
+  <p>Machine learning for real-world systems, including natural language processing, information retrieval, and recommender systems; operationalizing ML models and pipelines for production.</p>
+</section>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<section class="selected-publications">
+  <h2>Selected publications</h2>
+  <ul>
+    {% for p in site.data.publications.journals %}
+      <li>
+        <strong>{{ p.authors }}</strong>. "{{ p.title }}" — <em>{{ p.journal }}</em>, {{ p.year }}.
+        {% if p.link %}<a href="{{ p.link }}" target="_blank">[pdf]</a>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 
-    body {
-      min-height: 100%;
-      background: #eee;
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      color: #222;
-      font-size: 14px;
-      line-height: 26px;
-      padding-bottom: 50px;
-    }
-
-    .clear {
-      clear: both;
-    }
-
-
-    #page-wrap {
-      max-width: 725px;
-      height: auto;
-      background: #eee;
-      margin: 0px auto 0px;
-
-      /*border-radius: 3px;
-    box-shadow: 1px 1px 2px #C8C8C8;*/
-      padding: 40px;
-      margin-top: 50px;
-    }
-
-    #pic {
-      float: right;
-      margin: -30px 0 0 0;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-    }
-
-    h1 {
-      margin: 0 0 16px 0;
-      padding: 0 0 16px 0;
-      font-size: 42px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      border-bottom: 1px solid #C8C8C8;
-    }
-
-    h3 {
-      font-size: 16px;
-      margin: 0 0 5px 0;
-      position: relative;
-    }
-
-    h3 span {
-      position: relative;
-      bottom: 0;
-      right: 0;
-      font-style: italic;
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      color: #747474;
-      font-weight: normal;
-    }
-
-    p {
-      margin: 0 0 12px 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0084D1;
-      font-style: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #000;
-    }
-
-    ul {
-      margin: 0 0 32px 17px;
-    }
-
-    ol {
-      margin: 0 0 32px 17px;
-    }
-
-    #objective {
-      width: 600px;
-      float: center;
-    }
-
-    #objective p {
-      font-family: 'Lato', sans-serif;
-      color: #222;
-    }
-
-    dt {
-      font-weight: bold;
-      font-size: 18px;
-      text-align: right;
-      padding: 0 5px 0 0;
-      width: 125px;
-      float: left;
-      height: 50px;
-      border-right: 2px solid #C8C8C8;
-    }
-
-    dd {
-      width: 500px;
-      float: right;
-    }
-
-    dd.clear {
-      float: none;
-      margin: 0;
-      height: 15px;
-    }
-
-    .first-name {
-      font-weight: 700;
-    }
-
-    .last-name {
-      font-weight: 300;
-    }
-
-    /* Style the tab */
-    .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-    }
-
-    /* Style the buttons inside the tab */
-    .tab button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-      font-size: 17px;
-    }
-
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-      background-color: #ddd;
-    }
-
-    /* Create an active/current tablink class */
-    .tab button.active {
-      background-color: #ccc;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-      display: none;
-      padding: 12px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
-      background: #fff;
-      margin-top: 10px;
-    }
-
-    /* Print only the long CV when user prints (or clicks Export) */
-    @media print {
-      body * { visibility: hidden; }
-      #longbio, #longbio * { visibility: visible; }
-      #longbio { position: absolute; left: 0; top: 0; width: 100%; }
-    }
-  </style>
-</head>
-
-<body>
-  <div id="page-wrap">
-    <img src="images/profile.png" alt="Photo of Dinda" id="pic">
-
-    <div id="contact-info" class="vcard">
-
-      <h1 class="fn"><span class="first-name">Dinda</span>
-        <span class="last-name">Novitasari</span>
-      </h1>
-    </div>
-    <p>Email: id[dot][<b>firstname</b>lastname][at]gmail[dot]com | East Java, Indonesia</p>
-
-    <div class="tab">
-      <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'professional')">Professional Summary</button>
-      <button class="tablinks" onclick="openCity(event, 'scientific')">Scientific Bio</button>
-      <button class="tablinks" onclick="openCity(event, 'longbio')">Long CV</button>
-      <button class="tablinks" onclick="openCity(event, 'blog')">Blog</button>
-    </div>
-
-    <div class="tabcontent" id="professional">
-      <div id="objective">
-        <p>An IT professional who provides the solution for industry problems by leveraging machine
-          learning
-          (natural language processing, information retrieval, and recommendation systems) and assists the company
-          to
-          answer "after building machine learning model, then what's next?".
-          Earned a master degree from Department of Computer Science and Information Engineering, National Central
-          University.</p>
-      </div>
-    </div>
-
-    <div class="tabcontent" id="scientific">
-      <div id="objective">
-        <p><b>Dinda Novitasari</b> earned a Master degree from Department of Computer Science and Information
-          Engineering, National Central University. At present, she is a machine learning engineer in the
-          telecommunication industry. Her research interests include machine learning and data mining
-          applications.
-        </p>
-      </div>
-    </div>
-
-    <div class="tabcontent" id="longbio">
-      <div id="objective">
-        <p style="color:black">This site now has the full CV as a separate resume page. Click below to view and export the long CV as PDF.</p>
-        <p><a href="{{ '/resume/' | relative_url }}" style="padding:8px 12px;border-radius:6px;background:#0A66C2;color:#fff;text-decoration:none;">Open Full Resume</a></p>
-      </div>
-    </div>
-
-    <!-- Blog tab: list Jekyll posts -->
-    <div class="tabcontent" id="blog">
-      <h2>Blog posts</h2>
-      <ul>
-        {% if site.posts.size > 0 %}
-          {% for post in site.posts %}
-            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%b %-d, %Y" }}</small></li>
-          {% endfor %}
-        {% else %}
-          <li>No posts yet. Create one in <code>_posts/</code>.</li>
-        {% endif %}
-      </ul>
-    </div>
-
-
-  </div>
-
-</body>
-<script>
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    var el = document.getElementById(cityName);
-    if (el) el.style.display = "block";
-    if (evt && evt.currentTarget) evt.currentTarget.className += " active";
-  }
-  // Open default tab
-  document.addEventListener('DOMContentLoaded', function() {
-    var defaultBtn = document.getElementById('defaultOpen');
-    if (defaultBtn) defaultBtn.click();
-  });
-</script>
-
-</html>
-        </dd>
-      </dl>
-    </div>
-
-
-  </div>
-
-
-</body>
-<script>
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-
-
-
-
-</script>
-
-</html>
+<section class="education-thesis">
+  <h2>Theses</h2>
+  <ul>
+    {% for t in site.data.publications.theses %}
+      <li>{{ t.type }}: <strong>{{ t.title }}</strong>{% if t.link %} — <a href="{{ t.link }}" target="_blank">[link]</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
