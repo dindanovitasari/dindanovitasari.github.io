@@ -24,29 +24,3 @@
     </div>
   </body>
 </html>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <nav class="top-nav">
-  <a href="{{ '/' | relative_url }}">Home</a> |
-  <a href="{{ '/resume/' | relative_url }}">Resume</a> |
-        <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      </nav>
-
-      <main>
-        {{ content }}
-      </main>
-
-      <footer>
-        <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
-      </footer>
-    </div>
-  </body>
-</html>
