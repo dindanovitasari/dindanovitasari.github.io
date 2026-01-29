@@ -1,10 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+---
+layout: default
+title: Home
+---
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dinda Novitasari</title>
 
   <style>
@@ -168,13 +173,22 @@
       background-color: #ccc;
     }
 
-    /* Style the tab content
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-} */
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 12px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      background: #fff;
+      margin-top: 10px;
+    }
+
+    /* Print only the long CV when user prints (or clicks Export) */
+    @media print {
+      body * { visibility: hidden; }
+      #longbio, #longbio * { visibility: visible; }
+      #longbio { position: absolute; left: 0; top: 0; width: 100%; }
+    }
   </style>
 </head>
 
@@ -191,10 +205,10 @@
     <p>Email: id[dot][<b>firstname</b>lastname][at]gmail[dot]com | East Java, Indonesia</p>
 
     <div class="tab">
-      <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'professional')">Professional Summary
-      </button>
+      <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'professional')">Professional Summary</button>
       <button class="tablinks" onclick="openCity(event, 'scientific')">Scientific Bio</button>
       <button class="tablinks" onclick="openCity(event, 'longbio')">Long CV</button>
+      <button class="tablinks" onclick="openCity(event, 'blog')">Blog</button>
     </div>
 
     <div class="tabcontent" id="professional">
@@ -234,6 +248,10 @@
           my
           bachelor and master degree.</p>
       </div>
+
+      <p style="margin-top:12px">
+        <button onclick="window.print()" style="padding:8px 12px;border-radius:6px;background:#0A66C2;color:#fff;border:none;cursor:pointer">Export Long CV to PDF</button>
+      </p>
 
       <div class="clear"></div>
       <dl>
@@ -370,9 +388,22 @@
       </dl>
     </div>
 
+    <!-- Blog tab: list Jekyll posts -->
+    <div class="tabcontent" id="blog">
+      <h2>Blog posts</h2>
+      <ul>
+        {% if site.posts.size > 0 %}
+          {% for post in site.posts %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%b %-d, %Y" }}</small></li>
+          {% endfor %}
+        {% else %}
+          <li>No posts yet. Create one in <code>_posts/</code>.</li>
+        {% endif %}
+      </ul>
+    </div>
+
 
   </div>
-
 
 </body>
 <script>
@@ -386,14 +417,15 @@
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+    var el = document.getElementById(cityName);
+    if (el) el.style.display = "block";
+    if (evt && evt.currentTarget) evt.currentTarget.className += " active";
   }
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-
-
-          </ul>
+  // Open default tab
+  document.addEventListener('DOMContentLoaded', function() {
+    var defaultBtn = document.getElementById('defaultOpen');
+    if (defaultBtn) defaultBtn.click();
+  });
 </script>
 
 </html>
