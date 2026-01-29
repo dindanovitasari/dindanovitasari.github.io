@@ -1,0 +1,141 @@
+/* CV Print/PDF Styles */
+@media print {
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+  }
+
+  /* Hide unnecessary elements for print */
+  .navbar, 
+  .footer, 
+  .nav-pills, 
+  .btn, 
+  a[target="_blank"]:after,
+  .float-right {
+    display: none !important;
+  }
+
+  /* Page setup */
+  @page {
+    size: A4;
+    margin: 0.5in;
+  }
+
+  /* Headers */
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 6pt;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 14pt;
+    margin-top: 12pt;
+    margin-bottom: 8pt;
+    padding-bottom: 4pt;
+    border-bottom: 1px solid #333;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 12pt;
+    margin-top: 10pt;
+    margin-bottom: 4pt;
+    font-weight: 600;
+    page-break-after: avoid;
+  }
+
+  /* Content sections */
+  .cv {
+    max-width: 100%;
+  }
+
+  .card {
+    border: none !important;
+    page-break-inside: avoid;
+    margin-bottom: 12pt !important;
+  }
+
+  .card-title {
+    font-size: 12pt;
+    font-weight: 600;
+    margin-bottom: 6pt !important;
+  }
+
+  /* Lists */
+  ul, ol {
+    margin-left: 20pt;
+    margin-bottom: 6pt;
+  }
+
+  li {
+    margin-bottom: 3pt;
+  }
+
+  /* Time table entries */
+  .table {
+    border: none;
+    margin-bottom: 10pt;
+  }
+
+  .table td, .table th {
+    padding: 4pt;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Description text */
+  p {
+    margin: 4pt 0;
+  }
+
+  /* Link handling */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  /* Avoid page breaks in important sections */
+  .card {
+    page-break-inside: avoid;
+  }
+
+  /* Post header */
+  .post-header {
+    page-break-after: avoid;
+  }
+
+  /* Spacing adjustments for print */
+  .mt-3 {
+    margin-top: 8pt !important;
+  }
+
+  .p-3 {
+    padding: 8pt !important;
+  }
+
+  /* Make sure text is readable */
+  body, body * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+/* Screen view optimization */
+@media screen {
+  .cv {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}

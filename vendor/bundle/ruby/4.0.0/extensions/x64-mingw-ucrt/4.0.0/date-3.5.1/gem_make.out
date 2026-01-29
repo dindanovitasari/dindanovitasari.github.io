@@ -1,0 +1,25 @@
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+D:/Programs/Ruby40-x64/bin/ruby.exe extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with -Werror... no
+checking for altzone in time.h with -Werror... no
+creating Makefile
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26160-r1gsuo sitelibdir\=./.gem.20260129-26160-r1gsuo clean
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26160-r1gsuo sitelibdir\=./.gem.20260129-26160-r1gsuo
+generating date_core-x64-mingw-ucrt.def
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26160-r1gsuo sitelibdir\=./.gem.20260129-26160-r1gsuo install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20260129-26160-r1gsuo
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20260129-26160-r1gsuo sitelibdir\=./.gem.20260129-26160-r1gsuo clean

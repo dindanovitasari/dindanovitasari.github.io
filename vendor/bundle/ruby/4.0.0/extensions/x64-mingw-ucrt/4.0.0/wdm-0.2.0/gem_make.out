@@ -1,0 +1,28 @@
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/wdm-0.2.0/ext/wdm
+D:/Programs/Ruby40-x64/bin/ruby.exe extconf.rb
+checking for -lkernel32... yes
+checking for windows.h... yes
+creating Makefile
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/wdm-0.2.0/ext/wdm
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-21596-pjkg6r sitelibdir\=./.gem.20260129-21596-pjkg6r clean
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/wdm-0.2.0/ext/wdm
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-21596-pjkg6r sitelibdir\=./.gem.20260129-21596-pjkg6r
+generating wdm_ext-x64-mingw-ucrt.def
+compiling entry.c
+compiling memory.c
+compiling monitor.c
+compiling queue.c
+compiling rb_change.c
+compiling rb_monitor.c
+compiling utils.c
+compiling wdm.c
+linking shared-object wdm_ext.so
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/wdm-0.2.0/ext/wdm
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-21596-pjkg6r sitelibdir\=./.gem.20260129-21596-pjkg6r install
+/usr/bin/install -c -m 0755 wdm_ext.so ./.gem.20260129-21596-pjkg6r
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/wdm-0.2.0/ext/wdm
+make DESTDIR\= sitearchdir\=./.gem.20260129-21596-pjkg6r sitelibdir\=./.gem.20260129-21596-pjkg6r clean

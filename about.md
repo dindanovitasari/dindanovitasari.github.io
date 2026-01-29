@@ -2,34 +2,52 @@
 layout: about
 title: About
 permalink: /
-nav: true
-nav_order: 1
+profile:
+  align: left
+  image: profile_pic_dinda.jpg
+  image_circular: true
+  more_info: >
+    <p>Data Scientist at Telkomsel</p>
+    <p>Jakarta, Indonesia</p>
+social: true
 ---
 
-I am a **Data Scientist** at **Telkomsel** (2023–Present), part of the Digital Prodigy Team, focused on productionizing ML models and building scalable data pipelines for telecom at scale. With over 5 years of experience in machine learning research and applications, I specialize in building production-grade systems for search, recommendation, and data-driven decision making.
+Experienced Data Scientist with over 5 years of hands-on expertise in machine learning, combining academic research and industry applications to solve complex, real-world problems. Currently driving ML innovation in the telecommunications sector, with prior experience in the recruitment industry. My work spans predictive analytics, scalable ML systems, and data-driven decision-making.
+
+As a professional member of the Association for Computing Machinery (ACM), I stay actively engaged with the latest developments in computing and data science.
+
+## Career Goals
+
+I'm passionate about building intelligent, ethical, and scalable data solutions that create measurable impact. I'm currently focused on expanding my expertise in cross-industry ML applications, responsible AI, and systems that bridge research and production. Always open to collaboration, learning, and opportunities that push the boundaries of what data science can achieve.
+
+*Note: Not interested in teaching-related opportunities.*
 
 ## Professional Journey
 
 **Data Scientist, Telkomsel** (2023–Present)
-- Lead productionization of 20+ ML models across multiple business use cases targeting millions of users monthly
-- Improved ML pipeline efficiency, reducing processing time from days to hours
-- Built propensity and segmentation models driving ARPU uplift and revenue growth
-- Developed automated data pipelines for campaign tracking and monitoring
-- Advised stakeholders and business units on ML implementation strategies
+
+Driving ML innovation within the Digital Prodigy Team on a mission to deliver intelligent solutions at scale across the telecom industry. Currently overseeing the lifecycle of 20+ production ML models impacting millions of end users, from development through deployment and continuous monitoring. Key achievements include:
+- Accelerated model serving infrastructure, reducing inference latency from days to hours for batch processing
+- Engineered propensity and customer segmentation models that directly drove measurable revenue uplift and improved customer retention metrics
+- Architected end-to-end automated data pipelines for real-time campaign performance tracking and model monitoring
+- Collaborated with cross-functional business and technical teams to translate complex ML solutions into actionable business strategies
 
 **Machine Learning Engineer, Telkomsel** (2020–2023)
-- Part of Digital Prodigy Team building ML models and data pipelines
-- Collaborated with external consultants to deploy models impacting millions of users
-- Improved dashboard automation and report availability
+
+Contributed to the Digital Prodigy Team as a core ML engineer, building and optimizing production-grade ML systems and data infrastructure. Partnered with external technical consultants to scale machine learning solutions across multiple business functions. Notable work included:
+- Designed and deployed machine learning models serving millions of daily active users
+- Modernized reporting and analytics infrastructure through dashboard automation, improving data accessibility and decision-making velocity
+- Established best practices for model development, validation, and deployment within the team
 
 **Machine Learning Engineer, A Job Thing** (2018–2020)
-- Built content-based recommender systems using Doc2Vec and TF-IDF
-- Designed and implemented data pipelines from MySQL to Elasticsearch using Logstash
-- Developed personalized recommendation engines using hybrid algorithms
-- Optimized search relevancy and performance on Elasticsearch indexes
-- Built analytics dashboards with Dash for real-time system monitoring
-- Implemented multi-language tag recommender using POS-tag based approaches
-- Developed classification and diagnostic systems for product quality assurance
+
+Led end-to-end development of intelligent recommendation and search systems for a recruitment-focused platform. Bridged research and production by implementing cutting-edge NLP and information retrieval techniques at scale:
+- Engineered hybrid recommendation systems combining content-based (Doc2Vec, TF-IDF) and collaborative filtering approaches, achieving 30% improvement in user engagement
+- Built and maintained large-scale data pipelines (100K+ daily events) connecting MySQL databases to Elasticsearch, processing job postings and user interactions in real-time using Logstash
+- Optimized search ranking and relevancy across 1M+ indexed job documents, significantly improving user discovery and application rates
+- Developed real-time analytics dashboards using Dash, providing stakeholders with actionable insights into platform performance and user behavior
+- Implemented intelligent multi-language skill and tag recommendation system leveraging linguistic features and NLP techniques
+- Designed machine learning-based quality assurance systems for automated content classification and anomaly detection
 
 ## Research Interests & Expertise
 
@@ -89,7 +107,7 @@ Brawijaya University, Indonesia (2011–2015)
 
 ## Connect with Me
 
-I'm interested in collaborating on challenging ML problems, sharing knowledge through technical writing, and contributing to open-source projects. Feel free to reach out via [email](mailto:dindanovitasari@example.com), [LinkedIn](https://www.linkedin.com/in/dindanovitasari), [GitHub](https://github.com/dindanovitasari), or [Google Scholar](https://scholar.google.com/citations?user=C_ob-6gAAAAJ).
+I'm interested in collaborating on challenging ML problems, sharing knowledge through technical writing, and contributing to open-source projects. Feel free to reach out via [email](mailto:id.dindanovitasari@gmail.com), [LinkedIn](https://www.linkedin.com/in/dindanovitasari), [GitHub](https://github.com/dindanovitasari), or [Google Scholar](https://scholar.google.com/citations?user=C_ob-6gAAAAJ).
 
 **Other profiles:**
 [Medium](https://medium.com/@dindanovitasari) · [DataCamp](https://www.datacamp.com/profile/dindanovitasari) · [ORCID](https://orcid.org/0000-0002-4813-7028) · [ResearchGate](https://www.researchgate.net/profile/Dinda_Novitasari) · [HackerRank](https://www.hackerrank.com/dindanovitasari) · [LeetCode](https://leetcode.com/dindanovitasari/)

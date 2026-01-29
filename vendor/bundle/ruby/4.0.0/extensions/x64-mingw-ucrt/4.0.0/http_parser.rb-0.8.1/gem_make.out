@@ -1,0 +1,20 @@
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+D:/Programs/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26344-4707om sitelibdir\=./.gem.20260129-26344-4707om clean
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26344-4707om sitelibdir\=./.gem.20260129-26344-4707om
+generating ruby_http_parser-x64-mingw-ucrt.def
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26344-4707om sitelibdir\=./.gem.20260129-26344-4707om install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260129-26344-4707om
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260129-26344-4707om sitelibdir\=./.gem.20260129-26344-4707om clean

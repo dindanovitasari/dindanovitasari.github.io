@@ -1,22 +1,69 @@
 title: Dinda Novitasari
-email: your.email@example.com
-description: "Resume and blog of Dinda Novitasari — Data Scientist"
+first_name: Dinda
+last_name: Novitasari
+email: id.dindanovitasari@gmail.com
+description: "Machine Learning Engineer | Researcher in NLP, Information Retrieval, and Recommender Systems"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dindanovitasari.github.io" # the base hostname & protocol for your site
+
+# Social media and profile
+author: "Dinda Novitasari"
+author_profile: true
+social:
+  - label: "Email"
+    icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:id.dindanovitasari@gmail.com"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/dindanovitasari"
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    url: "https://www.linkedin.com/in/dindanovitasari"
+
+# al-folio theme settings
+theme_color: blue
+nav_bar_color: lightblue
+max_width: 900px  # max content width for al-folio theme
+
+# Enable MathJax for LaTeX/math rendering
+enable_math: true
+
+# Third party libraries for MathJax
+third_party_libraries:
+  mathjax:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    integrity:
+      js: "sha384-cZIZIVERgtQvF7XMLyM0m7CWzQvL5x0gf4xlC2tj5MAxjsGO20uB4W37Z9NTtIVN"
+  polyfill:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"
+latest_posts:
+  enabled: true
+  scrollable: true
+  limit: 3
+  per_page: 5
+
+announcements:
+  enabled: false
 
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-toc
   - jekyll-scholar
 
 markdown: kramdown
 permalink: /:title/
 
-# al-folio expects some metadata
-author: "Dinda Novitasari"
-email: your.email@example.com
-description: "Resume and blog of Dinda Novitasari — Data Scientist"
-
 # build settings
 exclude:
   - README.md
+  - al-folio-master.zip
+  - al-folio-master/
+
+# Scholar settings for bibliography
+scholar:
+  style: apa
+  source: _bibliography
+  bibliography: references.bib

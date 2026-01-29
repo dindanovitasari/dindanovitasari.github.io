@@ -1,0 +1,19 @@
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+D:/Programs/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26160-w4h4v sitelibdir\=./.gem.20260129-26160-w4h4v clean
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26160-w4h4v sitelibdir\=./.gem.20260129-26160-w4h4v
+generating cparse-x64-mingw-ucrt.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-26160-w4h4v sitelibdir\=./.gem.20260129-26160-w4h4v install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260129-26160-w4h4v/racc
+
+current directory: D:/dindanovitasari.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260129-26160-w4h4v sitelibdir\=./.gem.20260129-26160-w4h4v clean

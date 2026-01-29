@@ -1,0 +1,183 @@
+have_func: checking for rb_enc_interned_str() in ruby/encoding.h... -------------------- yes
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong conftest.c -L. -LD:/Programs/Ruby40-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby400  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong conftest.c -L. -LD:/Programs/Ruby40-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby400  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby/encoding.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_to_interned_str() in ruby.h... -------------------- yes
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong conftest.c -L. -LD:/Programs/Ruby40-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby400  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_str_to_interned_str; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_new_capa() in ruby.h... -------------------- yes
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong conftest.c -L. -LD:/Programs/Ruby40-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby400  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_new_capa; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_bulk_insert() in ruby.h... -------------------- yes
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong conftest.c -L. -LD:/Programs/Ruby40-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby400  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_bulk_insert; return !p; }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_header: checking for x86intrin.h... -------------------- yes
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -std=c99   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <x86intrin.h>
+/* end */
+
+--------------------
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -std=c99  -Werror=implicit-function-declaration -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <x86intrin.h>
+ 6: 
+ 7: int main(int argc, char **argv) {
+ 8:   __m128i test = _mm_set1_epi8(32);
+ 9:   if (__builtin_cpu_supports("sse2")) { printf("OK"); }
+10:   if (argc > 100000) printf("%p", &test);
+11:   return 0;
+12: }
+/* end */
+
+have_header: checking for cpuid.h... -------------------- yes
+
+PATH=".;D:/Programs/Ruby40-x64/lib;D:\Programs\Ruby40-x64\bin;D:\Programs\Ruby40-x64\msys64\ucrt64\bin;D:\Programs\Ruby40-x64\msys64\usr\bin;C:\Users\Dinda\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MIT\Kerberos\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\adb;D:\Programs\Graphviz\bin;D:\Programs\Graphviz\bin\dot.exe;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Programs\Ruby40-x64\bin;C:\PROGRA~1\Java\JDK18~1.0_2\bin;D:\hadoop-3.3.0\bin;D:\hadoop-3.3.0\sbin;D:\apache-hive-3.1.2\bin;D:\db-derby-10.14.2.0\bin;C:\Program Files\Git\bin;C:\Users\Dinda\anaconda3\Scripts;D:\Programs\Microsoft VS Code\bin;C:\Users\Dinda\.cargo\bin;C:\Users\Dinda\anaconda3\Library\bin;;C:\Users\Dinda\AppData\Local\Microsoft\WindowsApps;C:\Users\Dinda\AppData\Local\Programs\Ollama;C:\Users\Dinda\AppData\Local\PowerToys\DSCModules\" LSAN_OPTIONS=detect_leaks=0 "gcc -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/x64-mingw-ucrt -ID:/Programs/Ruby40-x64/include/ruby-4.0.0/ruby/backward -ID:/Programs/Ruby40-x64/include/ruby-4.0.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -std=c99   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <cpuid.h>
+/* end */
+
+--------------------
+
