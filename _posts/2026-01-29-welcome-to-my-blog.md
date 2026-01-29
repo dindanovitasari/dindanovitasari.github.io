@@ -44,7 +44,7 @@ If such a vector exists, then $\mathbf{v}$ is called an **eigenvector** and $\la
 Imagine you have a transformation matrix $A$. Most vectors get rotated and stretched in complex ways. But eigenvectors are special—they only get scaled by a factor of $\lambda$:
 
 - If $\lambda > 1$: The eigenvector gets **stretched** in the same direction
-- If $0 < \lambda < 1$: The eigenvector gets **shrunk** in the same direction  
+- If $0 < \lambda < 1$: The eigenvector gets **shrunk** in the same direction
 - If $\lambda < 0$: The eigenvector gets **reversed** and scaled
 - If $\lambda = 1$: The eigenvector **stays the same** (fixed point)
 

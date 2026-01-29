@@ -1,0 +1,44 @@
+---
+layout: default
+title: Home
+---
+
+<header class="profile">
+  <img src="/images/profile_pic_dinda.jpg" alt="Dinda Novitasari" class="avatar">
+  <h1>Dinda Novitasari</h1>
+  <p class="subtitle">Machine Learning Engineer — Researcher in applied ML, information retrieval, and recommender
+    systems</p>
+  <p class="contact">Email: id[dot][firstname lastname][at]gmail[dot]com · East Java, Indonesia</p>
+  <p>
+    <a class="button" href="{{ '/resume/' | relative_url }}">Full CV / Resume</a>
+    <a class="button" href="{{ '/blog/' | relative_url }}">Blog</a>
+  </p>
+</header>
+
+<section class="research">
+  <h2>Research interests</h2>
+  <p>Machine learning for real-world systems, including natural language processing, information retrieval, and
+    recommender systems; operationalizing ML models and pipelines for production.</p>
+</section>
+
+<section class="selected-publications">
+  <h2>Selected publications</h2>
+  <ul>
+    {% for p in site.data.publications.journals %}
+    <li>
+      <strong>{{ p.authors }}</strong>. "{{ p.title }}" — <em>{{ p.journal }}</em>, {{ p.year }}.
+      {% if p.link %}<a href="{{ p.link }}" target="_blank">[pdf]</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="education-thesis">
+  <h2>Theses</h2>
+  <ul>
+    {% for t in site.data.publications.theses %}
+    <li>{{ t.type }}: <strong>{{ t.title }}</strong>{% if t.link %} — <a href="{{ t.link }}"
+        target="_blank">[link]</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
