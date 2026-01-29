@@ -4,10 +4,9 @@ description: "Resume and blog of Dinda Novitasari — Data Scientist"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourusername.github.io" # the base hostname & protocol for your site
 
-# Use AcademicPages remote theme
-remote_theme: academicpages/academicpages
+# Use a local theme for now to avoid remote-theme extraction issues
+theme: minima
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
 
 markdown: kramdown
