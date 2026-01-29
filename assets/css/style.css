@@ -16,3 +16,18 @@ body {
 .top-nav { margin-bottom: 20px; }
 .top-nav a { color: #0366d6; text-decoration: none; }
 footer { margin-top: 30px; font-size: 13px; color: #666; }
+
+/* Print improvements */
+@page { margin: 1.2cm; }
+@media print {
+  html, body { background: #fff; }
+  .container { box-shadow: none; border-radius: 0; }
+  .top-nav, footer, .top-banner, .social-links { display: none !important; }
+  /* Make resume readable when printed */
+  #longbio { font-size: 12pt; color: #000; }
+  h1 { font-size: 20pt; }
+  h2 { font-size: 14pt; }
+  h3 { font-size: 12pt; }
+  .page-break { page-break-before: always; }
+}
+
